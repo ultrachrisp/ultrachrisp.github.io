@@ -3,8 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Catamaran:800,400);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,800italic,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,6 +48,7 @@ table {
   border-spacing: 0; }
 
 .grid {
+  position: relative;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto; }
@@ -2113,5 +2113,58 @@ html {
       margin: 20px auto; }
 
 body {
-  line-height: 2rem;
-  font-size: 2rem; }
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 6.0rem;
+  line-height: 6rem;
+  font-weight: 300; }
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url(../img/placeHolder.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.placeholder {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  color: #fff; }
+  .placeholder h1 {
+    text-shadow: 2px 2px 5px #333; }
+  .placeholder p {
+    text-shadow: 2px 2px 3px #222; }
+  .placeholder h1, .placeholder p {
+    padding: 20px 1.31579% 0; }
+
+@media all and (min-width: 34.375em) {
+  .placeholder {
+    width: 65.51724%;
+    float: left;
+    margin-right: 3.44828%;
+    margin-left: 17.24138%;
+    margin-right: 17.24138%; }
+    .placeholder h1, .placeholder p {
+      padding: 20px 0 0; } }
+
+@media all and (min-width: 48.75em) {
+  .placeholder {
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%;
+    margin-left: 12.82051%;
+    margin-right: 12.82051%; } }
+
+@media all and (min-width: 67.5em) {
+  .placeholder {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 25.42373%;
+    margin-right: 25.42373%; } }
