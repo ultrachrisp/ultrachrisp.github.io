@@ -2123,6 +2123,25 @@ h1 {
   line-height: 6rem;
   font-weight: 300; }
 
+hr {
+  position: relative;
+  margin: 20px 1.31579%;
+  border-width: 2px;
+  border-color: #000; }
+  hr:before, hr:after {
+    content: "";
+    border: 4px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    width: 6px;
+    height: 6px; }
+  hr:before {
+    left: -2px; }
+  hr:after {
+    right: -2px; }
+
 .background {
   width: 100%;
   height: 100%;
@@ -2140,18 +2159,30 @@ h1 {
     text-shadow: 2px 2px 5px #333; }
   .placeholder p {
     text-shadow: 2px 2px 3px #222; }
+  .placeholder img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    padding-top: 17px;
+    padding-right: 10px;
+    padding-left: 1.31579%; }
   .placeholder h1, .placeholder p {
-    padding: 20px 1.31579% 0; }
+    padding: 10px 1.31579%; }
 
 @media all and (min-width: 34.375em) {
+  hr {
+    margin: 20px 0; }
   .placeholder {
     width: 65.51724%;
     float: left;
     margin-right: 3.44828%;
     margin-left: 17.24138%;
     margin-right: 17.24138%; }
+    .placeholder img {
+      padding-left: 0; }
     .placeholder h1, .placeholder p {
-      padding: 20px 0 0; } }
+      padding: 10px 0; } }
 
 @media all and (min-width: 48.75em) {
   .placeholder {
