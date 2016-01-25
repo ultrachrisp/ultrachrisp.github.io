@@ -2125,7 +2125,7 @@ h1 {
 
 hr {
   position: relative;
-  margin: 20px 1.31579%;
+  margin: 20px 2.63158%;
   border-width: 2px;
   border-color: #000; }
   hr:before, hr:after {
@@ -2138,9 +2138,9 @@ hr {
     width: 6px;
     height: 6px; }
   hr:before {
-    left: -2px; }
+    left: -5px; }
   hr:after {
-    right: -2px; }
+    right: -5px; }
 
 .background {
   width: 100%;
@@ -2164,11 +2164,9 @@ hr {
     height: 50px;
     position: relative;
     float: left;
-    padding-top: 17px;
-    padding-right: 10px;
-    padding-left: 1.31579%; }
+    padding: 17px 2.63158% 0; }
   .placeholder h1, .placeholder p {
-    padding: 10px 1.31579%; }
+    padding: 10px 2.63158%; }
 
 @media all and (min-width: 34.375em) {
   hr {
