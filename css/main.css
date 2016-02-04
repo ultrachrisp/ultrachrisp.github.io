@@ -2116,8 +2116,7 @@ body {
   line-height: 2.5rem;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  min-height: 300px; }
+  font-weight: 400; }
 
 h1 {
   font-size: 6.0rem;
@@ -2126,7 +2125,7 @@ h1 {
 
 hr {
   position: relative;
-  margin: 20px 2.63158%;
+  margin: 20px 1.31579%;
   border-width: 2px;
   border-color: #000; }
   hr:before, hr:after {
@@ -2139,9 +2138,9 @@ hr {
     width: 6px;
     height: 6px; }
   hr:before {
-    left: -5px; }
+    left: -2px; }
   hr:after {
-    right: -5px; }
+    right: -2px; }
 
 .background {
   width: 100%;
@@ -2165,9 +2164,11 @@ hr {
     height: 50px;
     position: relative;
     float: left;
-    padding: 17px 2.63158% 0; }
+    padding-top: 17px;
+    padding-right: 10px;
+    padding-left: 1.31579%; }
   .placeholder h1, .placeholder p {
-    padding: 10px 2.63158%; }
+    padding: 10px 1.31579%; }
 
 @media all and (min-width: 34.375em) {
   hr {
