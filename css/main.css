@@ -2116,76 +2116,175 @@ body {
   line-height: 2.5rem;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #333;
+  min-height: 300px; }
 
 h1 {
   font-size: 6.0rem;
-  line-height: 6rem;
+  line-height: 7.0rem;
   font-weight: 300; }
 
-hr {
+h2 {
+  font-size: 5.0rem;
+  line-height: 5.9rem;
+  font-weight: 300; }
+
+h3 {
+  font-size: 4.2rem;
+  line-height: 5.0rem;
+  font-weight: 300; }
+
+h4 {
+  font-size: 3.8rem;
+  line-height: 4.4rem;
+  font-weight: 300; }
+
+h5 {
+  font-size: 3.1rem;
+  line-height: 3.6rem;
+  font-weight: 400; }
+
+h6 {
+  font-size: 2.7rem;
+  line-height: 3.1rem;
+  font-weight: 400; }
+
+h1, h2, h3 {
+  text-shadow: 2px 2px 4px #666; }
+
+h4, h5, h6 {
+  text-shadow: 2px 2px 3px #666; }
+
+p {
+  padding: 10px 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
+
+footer .content a {
   position: relative;
-  margin: 20px 1.31579%;
+  float: right;
+  margin: 0 15px;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.6s, color 0.6s; }
+  footer .content a:hover {
+    color: #fff;
+    background-color: #000; }
+
+hr, .line {
+  position: relative;
   border-width: 2px;
-  border-color: #000; }
-  hr:before, hr:after {
+  border-color: #000;
+  border-style: solid; }
+  hr::before, hr::after, .line::before, .line::after {
     content: "";
     border: 4px solid #000;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    top: -7px;
     width: 6px;
-    height: 6px; }
-  hr:before {
-    left: -2px; }
-  hr:after {
-    right: -2px; }
+    height: 6px;
+    z-index: 1; }
 
-.background {
-  width: 100%;
-  height: 100%;
-  position: fixed;
+hr::before {
+  left: -5px;
+  top: -7px; }
+
+hr::after {
+  top: -7px;
+  right: -5px; }
+
+.line::before {
+  top: -5px;
+  right: -2px; }
+
+.line::after {
+  bottom: 0px;
+  left: -6px; }
+
+.logo {
+  padding: 1.25rem; }
+
+/*.background{
+  width:100%;
+  height:100%;
+  position:fixed;
+  
   background: url(../img/placeHolder.jpg) no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+}*/
+.grid {
+  padding: 0 10px; }
 
-.placeholder {
+.line {
+  position: relative;
+  float: right;
+  height: 30px;
+  width: 15px;
+  border-width: 0px;
+  margin-top: 5px; }
+  .line .subLine1 {
+    border-bottom-color: #000; }
+  .line .subLine2 {
+    left: 3px;
+    border-bottom-color: #f9f9f9; }
+
+.line div {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-left-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 20px 10px; }
+
+ul, ol {
+  list-style-position: inside;
+  padding: 5px 10px; }
+
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+.content {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  color: #fff; }
-  .placeholder h1 {
-    text-shadow: 2px 2px 5px #333; }
-  .placeholder p {
-    text-shadow: 2px 2px 3px #222; }
-  .placeholder img {
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px; }
+  .content img {
     width: 50px;
     height: 50px;
     position: relative;
-    float: left;
-    padding-top: 17px;
-    padding-right: 10px;
-    padding-left: 1.31579%; }
-  .placeholder h1, .placeholder p {
-    padding: 10px 1.31579%; }
+    float: left; }
+
+footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
 
 @media all and (min-width: 34.375em) {
-  hr {
-    margin: 20px 0; }
-  .placeholder {
+  .content {
     width: 65.51724%;
     float: left;
     margin-right: 3.44828%;
     margin-left: 17.24138%;
-    margin-right: 17.24138%; }
-    .placeholder img {
-      padding-left: 0; }
-    .placeholder h1, .placeholder p {
-      padding: 10px 0; } }
+    margin-right: 17.24138%; } }
 
 @media all and (min-width: 48.75em) {
-  .placeholder {
+  .content {
     width: 74.35897%;
     float: left;
     margin-right: 2.5641%;
@@ -2193,9 +2292,9 @@ hr {
     margin-right: 12.82051%; } }
 
 @media all and (min-width: 67.5em) {
-  .placeholder {
-    width: 49.15254%;
+  .content {
+    width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
-    margin-left: 25.42373%;
-    margin-right: 25.42373%; } }
+    margin-left: 8.47458%;
+    margin-right: 8.47458%; } }
