@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2330,7 +2330,7 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: 700; }
+  font-weight: 600; }
 
 footer .content a {
   position: relative;
