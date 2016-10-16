@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>chrispyke.com</title>
-    <link>https://chrispyke.com/</link>
+    <link>https://chrispyke.com/index.xml</link>
     <description>Recent content on chrispyke.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
