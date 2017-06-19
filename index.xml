@@ -6,10 +6,19 @@
     <description>Recent content on Space Cowboy Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Sun, 18 Jun 2017 13:49:02 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jun 2017 07:37:40 +0200</lastBuildDate>
     
 	<atom:link href="https://chrispyke.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Joys of Craft</title>
+      <link>https://chrispyke.com/post/joys-of-craft/</link>
+      <pubDate>Mon, 19 Jun 2017 07:37:40 +0200</pubDate>
+      
+      <guid>https://chrispyke.com/post/joys-of-craft/</guid>
+      <description>I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. On any given day, I work on a number of tech stacks that get the job done but I always end up thinking, &#34;If I could have built this from scratch.&#34; Most projects suffer from budget &amp; time constraints and end up being &#39;good enough&#39;, which is OK. But when you do have enough time, when you are able to pick and choose your tools and set them up just right and you watch them work together, then the endorphin&#39;s flow.</description>
+    </item>
     
     <item>
       <title>We&#39;re Live!</title>
