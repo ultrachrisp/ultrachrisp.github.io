@@ -6,10 +6,20 @@
     <description>Recent content on Space Cowboy Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Mon, 19 Jun 2017 07:37:40 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 09 Sep 2017 15:45:43 +0200</lastBuildDate>
     
 	<atom:link href="https://chrispyke.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you even functional bro?</title>
+      <link>https://chrispyke.com/post/do-you-even-functional-bro/</link>
+      <pubDate>Sat, 09 Sep 2017 15:45:43 +0200</pubDate>
+      
+      <guid>https://chrispyke.com/post/do-you-even-functional-bro/</guid>
+      <description>My interest grew from a side conversation I over-heard. After that, every taste taught me something different. There is something truly haunting about functional programming.
+I have completed Functional Programming in Scala. I was not fully prepared for the learning curve as many of the concepts and principles were new to me. What I took away from the course has had a real impact on the way I approach software development.</description>
+    </item>
     
     <item>
       <title>The Joys of Craft</title>
