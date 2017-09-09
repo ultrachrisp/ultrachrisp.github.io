@@ -2641,9 +2641,11 @@ nav, footer {
       nav a:hover .fill, footer a:hover .fill {
         fill: #000; }
 
+footer {
+  margin-top: 15px; }
+
 nav {
   margin-top: 15px;
-  margin-bottom: 15px;
   float: left; }
   nav a, nav span {
     float: left; }
@@ -2680,7 +2682,8 @@ time {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 10px 15px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  margin-top: 15px; }
 
 .post-link {
   background-color: #fffdf9;
@@ -2688,7 +2691,7 @@ time {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 10px 15px;
-  margin: 0 0 15px 0;
+  margin-top: 15px;
   overflow: hidden; }
   .post-link time {
     float: right; }
@@ -2701,13 +2704,10 @@ time {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 10px 15px;
-  margin: 15px 0 15px 0;
+  margin-top: 15px;
   display: inline-block; }
   .post-title h2 {
     padding: 0; }
-  @media all and (min-width: 37.5em) {
-    .post-title {
-      margin: 0 0 15px 0; } }
 
 .post-summary {
   background-color: #fffdf9;
@@ -2715,7 +2715,7 @@ time {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 10px 15px;
-  margin-bottom: 15px; }
+  margin-top: 15px; }
   .post-summary h2 {
     padding-top: 0; }
   .post-summary h2 > a {
@@ -2736,14 +2736,11 @@ aside .previous a, aside .next a {
   border-radius: 20px;
   padding: 10px 15px;
   padding: 10px 15px;
-  margin: 15px 0 0;
+  margin-top: 15px;
   display: inline-block;
   text-decoration: none;
   width: 100%;
   text-align: center; }
-
-aside .next a {
-  margin: 15px 0 15px; }
 
 @media all and (min-width: 37.5em) {
   aside .previous a, aside .next a {
@@ -2758,7 +2755,9 @@ aside .next a {
   box-shadow: 2px 2px 6px 3px #ddd;
   box-sizing: border-box;
   border-radius: 20px;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  margin-top: 15px;
+  overflow: hidden; }
 
 .page-not-found {
   background-color: #fffdf9;
