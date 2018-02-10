@@ -10,7 +10,7 @@
     <meta name="description" content="Personal blog for Chris Pyke.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="canonical" href="https://chrispyke.com/post/do-you-even-functional-bro/" />
+    <link rel="canonical" href="https://chrispyke.com/post/ready-set-react/" />
     
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -100,30 +100,50 @@ ga('send', 'pageview');
 <section class="grid">
     <div class="post">
         <div class="post-layout">
-            <h1>Do you even functional bro?</h1/>
-            <time datetime="2017-09-09 15:45:43 &#43;0200 SAST">2017-09-09</time>
-            <p><img style="width:125px; height:200px; float:right; padding-left:10px;" src="../../img/scala.svg" alt="Scala logo"/>
-My interest grew from a side conversation I over-heard. After that, every taste taught me something different. There is something truly haunting about functional programming.<br><br>I have completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS" title="Functional Programming in Scala">Functional Programming in Scala</a>. I was not fully prepared for the learning curve as many of the concepts and principles were new to me. What I took away from the course has had a real impact on the way I approach software development.</p>
+            <h1>Ready, Set, React.</h1/>
+            <time datetime="2018-02-10 16:42:43 &#43;0200 SAST">2018-02-10</time>
+            <p><img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
+I am surprised how quickly I took to <a href="https://reactjs.org/" title="React">React</a>. I had completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS" title="Functional Programming in Scala">Functional Programming in Scala</a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.</p>
 
-<h2 id="the-discussion">The discussion</h2>
+<h2 id="so-it-began">So it began</h2>
 
-<p>Of course there is debate, we are spoiled for choice. There are three classic schools: imperative, procedural & functional. They all have their strengths. I have used imperative more than procedural. So when tasked with converting your general approach and thoughts regarding programming, a lot depends on the context. Concession make sense as stated by in <a href="Https:https://medium.com/@bfil/just-enough-functional-programming-a0c4fd09c8f7" title="Just enough functional programming">Just enough functional programming</a>. You then also get the other view in <a href="https://www.vincit.fi/en/blog/empty-promises-and-other-heresy/" title="Empty promises and heresy">Empty promises and heresy</a>.</p>
+<p>After doing some initial reading on <a href="https://angularjs.org/" title="Angular">Angular</a> and <a href="https://vuejs.org/" title="Vue">Vue</a>, I settled on React as it aligned closest to what I was trying to do. <a href="https://www.udemy.com/react-redux/" title="Modern React with Redux">Modern React with Redux</a> & <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/" title="Webpack 2: The Complete Developer's Guide">Webpack 2: The Complete Developer's Guide</a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.</p>
 
-<p>Being fully emerged in a functional environment enables deeper insights but needs to be part of your daily life. At the time, I had yet to integrate a fully functional approach into my daily tasks.</p>
+<p>With that in mind & a clear idea of what I didn't want, I started.</p>
 
-<h3 id="is-that-you-js">Is that you JS?</h3>
+<h3 id="json-driven">Json driven</h3>
 
-<p>My first love was <a href="https://en.wikipedia.org/wiki/ActionScript" title="ActionScript">ActionScript</a>. I still miss features of the language. There was even a time I used ActionScript & JavaScript in tandem, the two <a href="https://en.wikipedia.org/wiki/ECMAScript" title="ECMAScript">ECMAScript</a> twins. I hurt when they fought and I was sad to see ActionScript leave... I resented JavaScript. This changed with time as I learned that it was not JavaScript that I was resenting but rather the contemporary practises. In time, I witnessed JavaScript adapt and morph into what we see today.</p>
+<p>When your application is driven by Json, it can reinforce the separation between presentation & logic. Structuring your content & application logic into Json pays off when you can add & remove components through edits to the Json. Content updates then become much easier.</p>
 
-<p>In many ways, I am grateful that the web has iterated so rapidly enabling an environment for <a href="https://facebook.github.io/react/" title="React">React</a>. I felt joy when I realised 'how' React was solving many of my more common struggles.</p>
+<p>The Json then becomes the composite model of your application.</p>
 
-<h3 id="react-lands">React lands</h3>
+<h3 id="application-vs-component-state">Application vs component state</h3>
 
-<p>So after a fairly in depth introduction to functional I was presented with a problem that I wanted to solve with my new found knowledge. At the same time I started reading about <a href="https://facebook.github.io/react/" title="ReactJS">ReactJS</a>, and that is when I really became excited.</p>
+<p>Or phrased better, 'why not both?'</p>
 
-<p>I do not think that I would have had the same reaction about React if I had not actively been looking for a functional solution to a rich, interactive, static web components. I raced through <a href="https://www.udemy.com/react-redux/" title="Modern React with redux">Modern React with redux</a> and was thrilled when I realised that it was actively supporting a functional approach. <a href="https://lodash.com/" title="Lodash">Lodash</a> integrated seamlessly and it was easy enough to extend with other libraries that I needed.</p>
+<p>The temptation of putting all application state in Redux is appealing but impractical. Reducing your logic into sections that fit into reducers helps to add focus to core changes. The logic left over gets implemented as component state & logic.</p>
 
-<p>I knew I was getting serious about React when I integrated <a href="https://github.com/felipeochoa/rjsx-mode" title="rjsx-mode">rjsx-mode</a>, with a couple of personal tweaks, into my standard Emacs build. Aside from a few issues I could not immediately solve with what was there and supported, I dived into this exciting new world of functional front-end.</p>
+<p>But I was unprepared for the joy I felt when there was a clear separation of application vs local state. It was incredibly satisfying watching the application refresh relevant components on critical changes, as well as watching interactions between components that did not affect the application state.</p>
+
+<h3 id="components-everywhere">Components everywhere</h3>
+
+<p>This has been a secondary objective in so many of my projects that I had almost given up hope of getting it right. This is not to say that it is not possible in other frameworks, or that other frameworks have not attempted the same thing. But when the timelines are tight or more members are added to the team, the current pressures usually override all future payoffs.</p>
+
+<p>React (I am going to abuse another well known phrase) treats components as 'first class citizens'. React focuses your development around building smaller, more reusable, more interchangeable components. The application arises from the interactions of these components. The whole process feels very natural.</p>
+
+<h3 id="brand-new-second-hand">Brand new second hand</h3>
+
+<p>Modular components allow for component libraries that span multiple applications. There are many advantages: consistency across applications; more maintainable components; faster updates across applications.</p>
+
+<p>In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library... I am trying hard to think of down-sides.</p>
+
+<p>This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look & refine your existing components to accommodate new features & functionality without sacrificing its modularity.</p>
+
+<h3 id="debugging">Debugging</h3>
+
+<p>I was surprised when the production version of the application threw a run-time error that was not present during development. My initial disappointment did not last long once I dived in and started debugging. I was able to isolate the troubled component quickly by removing components via the Json. And since I was looking at a single, modular component, finding and fixing the problem was trivial.</p>
+
+<p><a href="https://github.com/gaearon/redux-devtools" title="Redux Devtools">Redux Devtools</a> is also an excellent browser extension & an invaluable development tool. It surfaces the application state, tracks specific state changes and even allows you to go back to previous versions of the state. It does not surface component state which can be confusing.</p>
 
         </div>
     </div>
@@ -132,12 +152,10 @@ My interest grew from a side conversation I over-heard. After that, every taste 
 <aside class="grid">
     <span class="previous">
         
-        <a href="https://chrispyke.com/post/ready-set-react/">&lt;&lt; Ready, Set, React. </a>
-        
     </span>
     <span class="next">
         
-        <a  href="https://chrispyke.com/post/joys-of-craft/"> The Joys of Craft &gt;&gt;</a>
+        <a  href="https://chrispyke.com/post/do-you-even-functional-bro/"> Do you even functional bro? &gt;&gt;</a>
         
     </span>
 </aside>

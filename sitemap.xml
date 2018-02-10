@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chrispyke.com/post/ready-set-react/</loc>
+    <lastmod>2018-02-10T16:42:43+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrispyke.com/post/do-you-even-functional-bro/</loc>
     <lastmod>2017-09-09T15:45:43+02:00</lastmod>
   </url>
@@ -24,13 +29,13 @@
   
   <url>
     <loc>https://chrispyke.com/post/</loc>
-    <lastmod>2017-09-09T15:45:43+02:00</lastmod>
+    <lastmod>2018-02-10T16:42:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chrispyke.com/</loc>
-    <lastmod>2017-09-09T15:45:43+02:00</lastmod>
+    <lastmod>2018-02-10T16:42:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   

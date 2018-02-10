@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Space Cowboy Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Sat, 09 Sep 2017 15:45:43 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 16:42:43 +0200</lastBuildDate>
     
 	<atom:link href="https://chrispyke.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ready, Set, React.</title>
+      <link>https://chrispyke.com/post/ready-set-react/</link>
+      <pubDate>Sat, 10 Feb 2018 16:42:43 +0200</pubDate>
+      
+      <guid>https://chrispyke.com/post/ready-set-react/</guid>
+      <description>I am surprised how quickly I took to React. I had completed Functional Programming in Scala and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
+So it began After doing some initial reading on Angular and Vue, I settled on React as it aligned closest to what I was trying to do.</description>
+    </item>
     
     <item>
       <title>Do you even functional bro?</title>
