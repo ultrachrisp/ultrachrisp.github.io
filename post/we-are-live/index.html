@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     
     <title>Space Cowboy Coding</title>
-    <meta name="generator" content="Hugo 0.49" />
+    <meta name="generator" content="Hugo 0.49.2" />
     <meta name="author" content="Chris Pyke">
     <meta name="description" content="Personal blog for Chris Pyke.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,9 +100,12 @@ if (!doNotTrack) {
 
 
 <section class="post">
-
         <h1>We&#39;re Live!</h1>
-        <time datetime="2017-06-18 13:49:02 &#43;0200 SAST">2017-06-18</time>
+        <time datetime="2017-06-18 13:49:02 &#43;0200 SAST">Published: 2017-06-18</time>
+        
+        <time datetime="2018-10-20 13:38:02 &#43;0200 SAST">Last update: 2018-10-20</time>
+        
+        
         <p>This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.</p>
 
 <h2 id="hugo">Hugo</h2>
@@ -115,17 +118,27 @@ if (!doNotTrack) {
 
 <p>I rely heavily on version control. Most of my work goes into private repositories which left my <a href="https://github.com/" title="GitHub">GitHub</a> account neglected. I use <a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a> for this blog. If there is no major reliance on a back-end, you can have your repositories & blog in the same place. Yay Git!</p>
 
-<h3 id="cloadflare">Cloadflare</h3>
+<h3 id="cloudflare">Cloudflare</h3>
 
 <p>You have a static website but you now need SSL or some simple server functionality? Enter <a href="https://www.cloudflare.com/" title="Cloudflare">Cloudflare</a>, helping secure your website as well as other benefits. It solved the issues I had, and it solved it for free.</p>
 
-<h3 id="gulp">Gulp</h3>
+<h3 id="gulp-npm"><del>Gulp</del> NPM</h3>
 
-<p>There are options with Task Runners too but I have grown very found of <a href="http://gulpjs.com/" title="Gulp">Gulp</a>. In time, I may simplify my builds using more generic tools (i.e. <a href="https://www.npmjs.com/" title="npm">npm</a> natively or bash scripts) but Gulp does what I need it too and it does it well.</p>
+<p><del>There are options with Task Runners too but I have grown very found of <a href="http://gulpjs.com/" title="Gulp">Gulp</a>. In time, I may simplify my builds using more generic tools (i.e. <a href="https://www.npmjs.com/" title="npm">npm</a> natively or bash scripts) but Gulp does what I need it too and it does it well.</del></p>
 
-<h3 id="susy">Susy</h3>
+<p>Gulp certainly still has its place but after working with <a href="https://webpack.js.org/" title="Webpack">Webpack</a>, I have grown more accustomed to <a href="https://docs.npmjs.com/misc/scripts" title="NPM scripts">NPM scripts</a>. Moving from Gulp to NPM scripts allowed me to remove a 'minor' dependency & streamline my build process.</p>
 
-<p>For the life of me, I cannot understand why <a href="http://susy.oddbird.net/" title="Susy">Susy</a> has not been more widely adopted. I have been using Susy as a <a href="http://sass-lang.com/" title="Sass">Sass</a> grid system for a few years and the flexibility it gives is unmatched. The rise of flex-box and CSS-grid will eventually replace Susy. Until then, it allows greater freedom in positioning & layout without the expense of my sanity or weekends.</p>
+<h3 id="susy-css-grid-flexbox"><del>Susy</del> CSS Grid & Flexbox</h3>
+
+<p><del>For the life of me, I cannot understand why <a href="http://susy.oddbird.net/" title="Susy">Susy</a> has not been more widely adopted. I have been using Susy as a <a href="http://sass-lang.com/" title="Sass">Sass</a> grid system for a few years and the flexibility it gives is unmatched. The rise of flex-box and CSS-grid will eventually replace Susy. Until then, it allows greater  freedom in positioning & layout without the expense of my sanity or weekends.</del></p>
+
+<p>For its time, Susy was amazing! It added so many options that were either not available or took too long to develop & maintain. But after CSS grid & flexbox arrived (and Susy started to <a href="https://twitter.com/SassSusy/status/954423375127957504" title="shut down">shut down</a>), there really was no excuse to hold onto the past. A combination of CSS grid & flexbox can allow for almost limitless responsive layout options. I decided to try it out and recreate the existing Susy layout using CSS grid & flexbox. And where better than here!</p>
+
+<h3 id="javascript">JavaScript</h3>
+
+<p>Or lack thereof. One of the goals for the blog was to see if I could solve most problems without having to use JavaScript (JS). <a href="https://stallman.org/" title="Richard Stallman">Richard Stallman</a> and his approaches to software development have impacted my views. Completely 'free' software is a worthwhile ideal if somewhat inconvenient.</p>
+
+<p>The blog runs Analytics but should still function with JS disabled. Not a day goes by when I do not write some JS, but this blog is as much about experimenting & prototyping as it is about blogging. I'll save JS for the good stuff.</p>
 
 <h3 id="emacs">Emacs</h3>
 
@@ -135,25 +148,16 @@ if (!doNotTrack) {
 
 <p><strong>Answer:</strong> No, but it can do so much once you get over the learning curve & play to its strengths.</p>
 
-<p>Tip 22 from the <a href="https://pragprog.com/book/tpp/the-pragmatic-programmer" title="Pragmatic Programmer">Pragmatic Programmer</a> was "Use a single editor well". This struck me as odd because I was using a number of IDS's simultaneously. Each one had its specific niche but fell short in other respects. I now see the advantage of consolidating my life in a single editor. I use other IDE's when needed (<a href="https://www.visualstudio.com/" title="Visual Studio">Visual Studio</a>, <a href="https://developer.apple.com/xcode/" title="Xcode">Xcode</a>, <a href="https://madewith.unity.com/" title="Unity">Unity</a> & <a href="https://www.unrealengine.com/" title="Unreal">Unreal</a>) but Emacs feels like home every time I fire it up.</p>
-
-<h3 id="javascript">JavaScript</h3>
-
-<p>Or lack thereof. One of the goals for the blog was to see if I could solve most problems without having to use JavaScript (JS). <a href="https://stallman.org/" title="Richard Stallman">Richard Stallman</a> and his approaches to software development have impacted my views. Completely 'free' software is a worthwhile ideal if somewhat inconvenient.</p>
-
-<p>The blog runs Analytics but should still function with JS disabled. Not a day goes by when I do not write some JS, but this blog is as much about experimenting & prototyping as it is about blogging. I'll save JS for the good stuff.</p>
-
+<p>Tip 22 from the <a href="https://pragprog.com/book/tpp/the-pragmatic-programmer" title="Pragmatic Programmer">Pragmatic Programmer</a> was "Use a single editor well". This struck me as odd because I was using a number of IDE's simultaneously. Each one had its specific niche but fell short in other respects. I now see the advantage of consolidating my life in a single editor. I use other IDE's when needed (<a href="https://www.visualstudio.com/" title="Visual Studio">Visual Studio</a>, <a href="https://developer.apple.com/xcode/" title="Xcode">Xcode</a>, <a href="https://madewith.unity.com/" title="Unity">Unity</a> & <a href="https://www.unrealengine.com/" title="Unreal">Unreal</a>) but Emacs feels like home every time I fire it up.</p>
 
 </section>
     
 <aside class="pagination">
-
     
     <a class="previous" href="https://chrispyke.com/post/joys-of-craft/">&lt;&lt; The Joys of Craft </a>
     
 
     
-
 </aside>
 
 <footer class="footer">
