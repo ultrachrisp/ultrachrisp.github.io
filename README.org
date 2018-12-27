@@ -1,0 +1,6 @@
+#+TITLE: Production files for the blog
+
+Not much to see here, these are the generate files from [[https://gohugo.io/][Hugo]] and [[https://www.npmjs.com/][NPM]] to show the blog.
+
+You can view this site in action at [[https://chrispyke.com][chrispyke.com]]
+

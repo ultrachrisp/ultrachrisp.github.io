@@ -10,7 +10,7 @@
     <meta name="description" content="Personal blog for Chris Pyke.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="canonical" href="https://chrispyke.com/post/ready-set-react/" />
+    <link rel="canonical" href="https://chrispyke.com/post/almighty-prototype/" />
     
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -100,63 +100,58 @@ if (!doNotTrack) {
 
 
 <section class="post">
-        <h1>Ready, Set, React.</h1>
-        <time datetime="2018-02-10 16:42:43 &#43;0200 SAST">Published: 2018-02-10</time>
+        <h1>The Almighty Prototype</h1>
+        <time datetime="2018-12-27 16:42:43 &#43;0200 SAST">Published: 2018-12-27</time>
         
         
-        <p><img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
-I am surprised how quickly I took to <a href="https://reactjs.org/" title="React">React</a>. I had completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS" title="Functional Programming in Scala">Functional Programming in Scala</a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.</p>
+        <p><img style="width:130px; height:130px; padding:0 20px 5px; float:right;" src="../../img/prototype.svg" alt="Prototype logo"/>
+Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail & learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.</p>
 
-<h2 id="so-it-began">So it began</h2>
+<h2 id="but-i-know-what-the-user-wants">But I know what the user wants</h2>
 
-<p>After doing some initial reading on <a href="https://angularjs.org/" title="Angular">Angular</a> and <a href="https://vuejs.org/" title="Vue">Vue</a>, I settled on React as it aligned closest to what I was trying to do. <a href="https://www.udemy.com/react-redux/" title="Modern React with Redux">Modern React with Redux</a> & <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/" title="Webpack 2: The Complete Developer's Guide">Webpack 2: The Complete Developer's Guide</a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.</p>
+<p>Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the beginning of the project? But prototyping is not refining but rather narrowing the focus. The 'agile approach' expects us to deploy a 'minimum viable product' (MVP) as soon as possible & iterate on it. In the panic to get to market, it is easy to overlook the word 'viable' in MVP.</p>
 
-<p>With that in mind & a clear idea of what I didn't want, I started.</p>
+<p>Prototyping & user testing at an early stage will provide a solid, iterable foundation. I have been involved with projects where the stakeholders were convinced that they knew their users. The designers & developers had reservations about the proposed way forward but their concerns were down-played or ignored. Work continued, the project launched and (unsurprisingly) did not get the traction hoped for.</p>
 
-<h3 id="json-driven">Json driven</h3>
+<p>We took a closer look at the analytics and conducted some user testing. The data showed that the stakeholders did not understand their users as well as they claimed. There were clear drop-off points in the user journey which aligned with the designers' predictions. We were able to address the issues but it extended the project timeline.</p>
 
-<p>When your application is driven by Json, it can reinforce the separation between presentation & logic. Structuring your content & application logic into Json pays off when you can add & remove components through edits to the Json. Content updates then become much easier.</p>
+<h2 id="hi-vs-lo-fidelity">Hi vs Lo fidelity</h2>
 
-<p>The Json then becomes the composite model of your application.</p>
+<p>The stage of the project as well as the project type can help decide on the fidelity of the prototype. Some projects are so new & different that you have to create your own interaction paradigm. Other projects can leverage existing paradigms & best practises. Both extremes benefit from prototyping, but the role the prototype plays is different.</p>
 
-<h3 id="application-vs-component-state">Application vs component state</h3>
+<p>For new interaction paradigms, a fast & cheap prototyping technique is very helpful. You can mock up interactions and program states on pieces of paper or post-it notes. These prototypes give great insights into how to use & interact with the product.</p>
 
-<p>Or phrased better, 'why not both?'</p>
+<p>A higher fidelity prototype can work well later in a project. Richer representations are great for user testing. They can provide motivation that a proposal or approach needs refining. A high fidelity prototype can illuminate oversights and issues.</p>
 
-<p>The temptation of putting all application state in Redux is appealing but impractical. Reducing your logic into sections that fit into reducers helps to add focus to core changes. The logic left over gets implemented as component state & logic.</p>
+<h2 id="talk-is-cheap">Talk is cheap</h2>
 
-<p>But I was unprepared for the joy I felt when there was a clear separation of application vs local state. It was incredibly satisfying watching the application refresh relevant components on critical changes, as well as watching interactions between components that did not affect the application state.</p>
+<p>Many stakeholders are, "obsessively compulsively indecisive". Or in other words, "they do not know what they want, but they know that they want it now".</p>
 
-<h3 id="components-everywhere">Components everywhere</h3>
+<p>We faced this issue on a project where the stakeholders insisted we had everything we needed to start development. We disagreed, but decided we needed to be proactive. We prototyped some of the designs using <a href="https://framer.com/" title="Framer">Framer</a>.</p>
 
-<p>This has been a secondary objective in so many of my projects that I had almost given up hope of getting it right. This is not to say that it is not possible in other frameworks, or that other frameworks have not attempted the same thing. But when the timelines are tight or more members are added to the team, the current pressures usually override all future payoffs.</p>
+<p>We sent the stakeholder a preview link of the prototype when an amazing thing happened. The stakeholders replied with a detailed critique of our work. This critique included questions on the design, user flows as well as the use of some components. We then revealed that we had merely mocked up the very same designs they had given us. The stakeholders were shocked. They immediately calmed down and allowed us some room to refine the product.</p>
 
-<p>React (I am going to abuse another well known phrase) treats components as 'first class citizens'. React focuses your development around building smaller, more reusable, more interchangeable components. The application arises from the interactions of these components. The whole process feels very natural.</p>
+<h2 id="multi-purpose">Multi-purpose</h2>
 
-<h3 id="brand-new-second-hand">Brand new second hand</h3>
+<p>The ability to rapidly & effectively prototype can provide different results or insights. Some general payoffs include:</p>
 
-<p>Modular components allow for component libraries that span multiple applications. There are many advantages: consistency across applications; more maintainable components; faster updates across applications.</p>
+<ul>
+<li>Provide a concrete example to an abstract concept.</li>
+<li>Refine journeys & stream line interactions.</li>
+<li>Test & confirm assumptions without notable initial investment or commitment.</li>
+<li>Support or refute user experience or design assumptions.</li>
+</ul>
 
-<p>In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library... I am trying hard to think of down-sides.</p>
-
-<p>This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look & refine your existing components to accommodate new features & functionality without sacrificing its modularity.</p>
-
-<h3 id="debugging">Debugging</h3>
-
-<p>I was surprised when the production version of the application threw a run-time error that was not present during development. My initial disappointment did not last long once I dived in and started debugging. I was able to isolate the troubled component quickly by removing components via the Json. And since I was looking at a single, modular component, finding and fixing the problem was trivial.</p>
-
-<p><a href="https://github.com/gaearon/redux-devtools" title="Redux Devtools">Redux Devtools</a> is also an excellent browser extension & an invaluable development tool. It surfaces the application state, tracks specific state changes and even allows you to go back to previous versions of the state. It does not surface component state which can be confusing.</p>
+<p>It took me a while to realise the full potential of prototyping. But prototyping became an indispensable personal skill. It streamlines the conversion from abstract theory to practical execution with less surprises along the way.</p>
 
 </section>
 
 <aside class="pagination">
     
-    <a class="previous" href="https://chrispyke.com/post/do-you-even-functional-bro/">&lt;&lt; Do you even functional bro?</a>
+    <a class="previous" href="https://chrispyke.com/post/ready-set-react/">&lt;&lt; Ready, Set, React.</a>
     
 
     
-    
-    <a class="next" href="https://chrispyke.com/post/almighty-prototype/">The Almighty Prototype &gt;&gt;</a>
     
 </aside>
 
