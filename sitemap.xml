@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chrispyke.com/post/</loc>
-    <lastmod>2018-12-27T16:42:43+02:00</lastmod>
-    <priority>0</priority>
+    <loc>https://chrispyke.com/cv/</loc>
+    <lastmod>2019-06-05T10:09:06+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://chrispyke.com/</loc>
+    <lastmod>2019-06-05T10:09:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrispyke.com/post/</loc>
     <lastmod>2018-12-27T16:42:43+02:00</lastmod>
     <priority>0</priority>
   </url>
