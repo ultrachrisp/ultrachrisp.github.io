@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta http-equiv="x-ua-compatible" content="IE=Edge" />
     <meta charset="UTF-8">
     
     <title>Space Cowboy Coding</title>
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.56.1" />
     <meta name="author" content="Chris Pyke">
     <meta name="description" content="Personal blog for Chris Pyke">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +21,14 @@
     <meta name="theme-color" content="#ffffff">
     
     
-    <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:300,600" rel="stylesheet">
     <link href="https://chrispyke.com/fonts/icomoon.woff?6w01iz" rel="preload" as="font" type="font/woff" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:300,600" rel="stylesheet">
     
-    <link href="https://chrispyke.com/scss/main.1cb20ffef66f5239b722753cf3175f835b7615c2a57bd4b1bdbb27ba5c977f4d.css" integrity="sha256-HLIP/vZvUjm3InU88xdfg1t2FcKle9SxvbsnulyXf00=" rel="stylesheet">
+    <link href="https://chrispyke.com/scss/main.40cca8524bb6c527c468dc152a97c71b5fa8f9e01586121fbd4bfafd6f75e99d.css" integrity="sha256-QMyoUku2xSfEaNwVKpfHG1&#43;o&#43;eAVhhIfvUv6/W916Z0=" rel="stylesheet">
     
     
     
+       
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -39,6 +40,7 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+    
     
 </head>
 <body class="grid">
@@ -67,52 +69,82 @@ if (!doNotTrack) {
 
 
 <section class="post">
-        <h1>Ready, Set, React.</h1>
-        <time datetime="2018-02-10">Published: 2018-02-10</time>
-        
-        
-        <p><img style="width:180px; height:180px; float:right;" src="../../svg/react.svg" alt="React"/>
-I am surprised how quickly I took to <a href="https://reactjs.org/" title="React">React</a>. I had completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS" title="Functional Programming in Scala">Functional Programming in Scala</a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.</p>
+    <h1 id="ready-set-react.">Ready, Set, React.</h1>
+    <time datetime="2018-02-10">Published: 2018-02-10</time>
+    
+    
+    
+<p>
 
-<h2 id="so-it-began">So it began</h2>
 
-<p>After doing some initial reading on <a href="https://angularjs.org/" title="Angular">Angular</a> and <a href="https://vuejs.org/" title="Vue">Vue</a>, I settled on React as it aligned closest to what I was trying to do. <a href="https://www.udemy.com/react-redux/" title="Modern React with Redux">Modern React with Redux</a> & <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/" title="Webpack 2: The Complete Developer's Guide">Webpack 2: The Complete Developer's Guide</a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.</p>
 
-<p>With that in mind & a clear idea of what I didn't want, I started.</p>
 
-<h3 id="json-driven">Json driven</h3>
 
-<p>When your application is driven by Json, it can reinforce the separation between presentation & logic. Structuring your content & application logic into Json pays off when you can add & remove components through edits to the Json. Content updates then become much easier.</p>
+<img class="right" style="width:180px;" src="/post/ready-set-react/react.svg" alt="React"/>
 
-<p>The Json then becomes the composite model of your application.</p>
 
-<h3 id="application-vs-component-state">Application vs component state</h3>
-
-<p>Or phrased better, 'why not both?'</p>
-
-<p>The temptation of putting all application state in Redux is appealing but impractical. Reducing your logic into sections that fit into reducers helps to add focus to core changes. The logic left over gets implemented as component state & logic.</p>
-
-<p>But I was unprepared for the joy I felt when there was a clear separation of application vs local state. It was incredibly satisfying watching the application refresh relevant components on critical changes, as well as watching interactions between components that did not affect the application state.</p>
-
-<h3 id="components-everywhere">Components everywhere</h3>
-
-<p>This has been a secondary objective in so many of my projects that I had almost given up hope of getting it right. This is not to say that it is not possible in other frameworks, or that other frameworks have not attempted the same thing. But when the timelines are tight or more members are added to the team, the current pressures usually override all future payoffs.</p>
-
-<p>React (I am going to abuse another well known phrase) treats components as 'first class citizens'. React focuses your development around building smaller, more reusable, more interchangeable components. The application arises from the interactions of these components. The whole process feels very natural.</p>
-
-<h3 id="brand-new-second-hand">Brand new second hand</h3>
-
-<p>Modular components allow for component libraries that span multiple applications. There are many advantages: consistency across applications; more maintainable components; faster updates across applications.</p>
-
-<p>In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library... I am trying hard to think of down-sides.</p>
-
-<p>This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look & refine your existing components to accommodate new features & functionality without sacrificing its modularity.</p>
-
-<h3 id="debugging">Debugging</h3>
-
-<p>I was surprised when the production version of the application threw a run-time error that was not present during development. My initial disappointment did not last long once I dived in and started debugging. I was able to isolate the troubled component quickly by removing components via the Json. And since I was looking at a single, modular component, finding and fixing the problem was trivial.</p>
-
-<p><a href="https://github.com/gaearon/redux-devtools" title="Redux Devtools">Redux Devtools</a> is also an excellent browser extension & an invaluable development tool. It surfaces the application state, tracks specific state changes and even allows you to go back to previous versions of the state. It does not surface component state which can be confusing.</p>
+I am surprised how quickly I took to <a href="https://reactjs.org/">React</a>. I had completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS">Functional Programming in Scala</a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
+</p>
+<h2 id="headline-1">
+So it began
+</h2>
+<p>
+After doing some initial reading on <a href="https://angularjs.org/">Angular</a> and <a href="https://vuejs.org/">Vue</a>, I settled on React as it aligned closest to what I was trying to do. <a href="https://www.udemy.com/react-redux/">Modern React with Redux</a> &amp; <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/">Webpack 2: The Complete Developer&#39;s Guide</a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.
+</p>
+<p>
+With that in mind &amp; a clear idea of what I didn&#39;t want, I started.
+</p>
+<h3 id="headline-2">
+Json driven
+</h3>
+<p>
+When your application is driven by Json, it can reinforce the separation between presentation &amp; logic. Structuring your content &amp; application logic into Json pays off when you can add &amp; remove components through edits to the Json. Content updates then become much easier.
+</p>
+<p>
+The Json then becomes the composite model of your application.
+</p>
+<h3 id="headline-3">
+Application vs component state
+</h3>
+<p>
+Or phrased better, &#39;why not both?&#39;
+</p>
+<p>
+The temptation of putting all application state in Redux is appealing but impractical. Reducing your logic into sections that fit into reducers helps to add focus to core changes. The logic left over gets implemented as component state &amp; logic. 
+</p>
+<p>
+But I was unprepared for the joy I felt when there was a clear separation of application vs local state. It was incredibly satisfying watching the application refresh relevant components on critical changes, as well as watching interactions between components that did not affect the application state.
+</p>
+<h3 id="headline-4">
+Components everywhere
+</h3>
+<p>
+This has been a secondary objective in so many of my projects that I had almost given up hope of getting it right. This is not to say that it is not possible in other frameworks, or that other frameworks have not attempted the same thing. But when the timelines are tight or more members are added to the team, the current pressures usually override all future payoffs.
+</p>
+<p>
+React (I am going to abuse another well known phrase) treats components as &#39;first class citizens&#39;. React focuses your development around building smaller, more reusable, more interchangeable components. The application arises from the interactions of these components. The whole process feels very natural.
+</p>
+<h3 id="headline-5">
+Brand new second hand
+</h3>
+<p>
+Modular components allow for component libraries that span multiple applications. There are many advantages: consistency across applications; more maintainable components; faster updates across applications.
+</p>
+<p>
+In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library… I am trying hard to think of down-sides.
+</p>
+<p>
+This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look &amp; refine your existing components to accommodate new features &amp; functionality without sacrificing its modularity.
+</p>
+<h3 id="headline-6">
+Debugging
+</h3>
+<p>
+I was surprised when the production version of the application threw a run-time error that was not present during development. My initial disappointment did not last long once I dived in and started debugging. I was able to isolate the troubled component quickly by removing components via the Json. And since I was looking at a single, modular component, finding and fixing the problem was trivial.
+</p>
+<p>
+<a href="https://github.com/gaearon/redux-devtools">Redux Devtools</a> is also an excellent browser extension &amp; an invaluable development tool. It surfaces the application state, tracks specific state changes and even allows you to go back to previous versions of the state. It does not surface component state which can be confusing.
+</p>
 
 </section>
 
