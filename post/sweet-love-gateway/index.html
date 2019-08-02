@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     
     <title>Space Cowboy Coding</title>
-    <meta name="generator" content="Hugo 0.56.1" />
+    <meta name="generator" content="Hugo 0.56.3" />
     <meta name="author" content="Chris Pyke">
     <meta name="description" content="Personal blog for Chris Pyke">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
     <link href="https://chrispyke.com/fonts/icomoon.woff?6w01iz" rel="preload" as="font" type="font/woff" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:300,600" rel="stylesheet">
     
-    <link href="https://chrispyke.com/scss/main.abd1aa1838f79e57cafc188ffc49a49e5980a814ed8a7220afdde2679b2e278e.css" integrity="sha256-q9GqGDj3nlfK/BiP/EmknlmAqBTtinIgr93iZ5suJ44=" rel="stylesheet">
+    <link href="https://chrispyke.com/scss/main.36cc64e68d0467a582d57f865dcc17325254b9d76004e5821c1791496de46a51.css" integrity="sha256-Nsxk5o0EZ6WC1X&#43;GXcwXMlJUuddgBOWCHBeRSW3kalE=" rel="stylesheet">
     
     
     
@@ -114,7 +114,7 @@ Possible ways to achieve the above without over working the build team?
 </li>
 </ul>
 <p>
-The first few times the structure was built, there was a lot of spacing between the threads. Too much to catch the light. The threads where also tied to the poles individually, which made weaving labour intensive. First, each thread needed to be tied into place. When the structure was hoisted into its final position, each thread need to be tightened. Unsurprisingly, the team agreed that there was room to improve here.
+The first few times the structure was built, there was a lot of spacing between the threads. Too much to catch the light. The threads where also tied to the poles individually, which made weaving labour intensive. First, each thread needed to be tied into place. When the structure was hoisted into its final position, each thread needed to be tightened. Unsurprisingly, the team agreed that there was room to improve here.
 </p>
 <p>
 My programming self needed a way to speed up the anchoring and weaving. There had to be a way to &#39;for loop&#39; / &#39;while loop&#39; / &#39;map&#39; over the threads.
@@ -245,8 +245,8 @@ As for the LEDs, I was able to source some WS2813 strips (upgraded WS2812b). The
         src="/post/sweet-love-gateway/day_1_hu5f22c848923d214059d53d07f5019fbb_1306567_600x0_resize_q75_box.jpg" alt="Description for screen readers."/>
 
 
-The LED strips ran on 5v, which was handy. We needed step-down converters to get from 20v to 5v to run the strips and micro-controllers. I was able to get an idea of the processing power required for that number of LEDs from <a href="https://github.com/FastLED/FastLED/issues/288">this thread</a>. To ensure that I wasn&#39;t overworking the controllers, I decided to dedicate an Arduino DUE to each pole.<br><br>
- The next issue was interaction. I sourced two lasers that produced line beams and 6 photo-resistors to produce a &#39;trip wire&#39; system. I then setup a Raspberry Pi 3b to receive signals from the photo-resistors. The Rasberry Pi also co-ordinate lighting effects with the Arduinos. As I worked on the system, I realised communication could be simplified by favoring WIFI over cabling. I replaced the Arduino Duos with ESP32 controllers. Communication was further streamlined using the <a href="http://mqtt.org/">MQTT protocol</a>. The theory was sound and I got a working version running in my garage.
+The LED strips ran on 5v, which was handy. We needed step-down converters to get from 20v to 5v to run the strips and micro-controllers. I was able to get an idea of the processing power required for that number of LEDs from <a href="https://github.com/FastLED/FastLED/issues/288">this thread</a>. To ensure that I wasn&#39;t overworking the controllers, I decided to dedicate an Arduino Due to each pole.<br><br>
+ The next issue was interaction. I sourced two lasers that produced line beams and 6 photo-resistors to produce a &#39;trip wire&#39; system. I then setup a Raspberry Pi 3b to receive signals from the photo-resistors. The Rasberry Pi also co-ordinated lighting effects with the Arduinos. As I worked on the system, I realised communication could be simplified by favoring WIFI over cabling. I replaced the Arduinos with ESP32 controllers. Communication was further streamlined using the <a href="http://mqtt.org/">MQTT protocol</a>. The theory was sound and I got a working version running in my garage.
 </p>
 <p>
 Time caught up with me in the end. I did as many general tests as I could before packing up the system and preparing for the trip to Tankwa Town.
@@ -271,17 +271,17 @@ Show Time
 
 
 The group that I was traveling with needed two full days to get from Johannesburg to Tankwa. We were venturing into the unknown (i.e. none of us had been to AfrikaBurn before), so there was a fair amount of over-preparation.<br><br>
- The first hurdle was separating the essential equipment from the &#39;nice to haves&#39;. The second was to get everyone into cars and moving. One of the cars blew a tyre on the nice highway. We hadn&#39;t even started driving on the tyre-shredding gravel roads yet. We dealt with all of this in turn, trying to balance the group&#39;s feelings with the common objectives.<br><br>
+ The first hurdle was separating the essential equipment from the &#39;nice to haves&#39;. The second was to get everyone into cars and moving. One of the cars blew a tyre on a main highway. We hadn&#39;t even started driving on the tyre-shredding gravel roads yet. We dealt with all of this in turn, trying to balance the group&#39;s feelings with the common objectives.<br><br>
  After we got to Tankwa town and setup our tents, we went in search of our 11 meter poles. We found them stacked by the Clan&#39;s Lamp (the core AfrikaBurn structure). The Clan helped us purchase and transported the poles to Tankwa town. This greatly simplified our lives and we were very grateful to the Clan for their support. After locating the poles, we left transporting them to the build site for the next morning.
 </p>
 <p>
-Three of the 11 meter poles were missing when we woke up. Everyone, including the organisers, were stunned. Search parties were sent out, calls were made and the whole camp started looking for the missing poles. Igor eventually spotted them at another project. We got help transporting them to our build site and then started construction. The team&#39;s moral took a hit.
+Three of the 11 meter poles were missing when we woke up. Everyone, including the organisers, were stunned. Search parties were sent out, calls were made and the whole camp started looking for the missing poles. Igor eventually spotted them at another project. We got help transporting them to our build site and then started construction.
 </p>
 <p>
 When we started fastening the chains to the poles, one of the poles snapped. There were many possible reasons why the pole could have snapped (the wood was untreated by choice, the poles were left out in the desert for too long, rough treatment by the pole thieves). But none of this helped solve the problem.
 </p>
 <p>
-We had two options before us: try to brace the broken pole with metal (causing further delays) or literal cut our losses by shortening all the poles to match the broken one. After a tense debate, the group decided to cut the poles and carry on building. There was a small consolation that all the poles were actually 12 meters long instead of 11. This meant that we didn&#39;t reduce the size of the structure as much as we initially feared.
+We had two options before us: try to brace the broken pole with metal (causing further delays) or literal cut our losses by shortening all the poles to match the broken one. After a tense debate, the group decided to cut the poles and carry on building. There was a small consolation that all the poles were originally 12 meters long instead of 11. This meant that we didn&#39;t reduce the size of the structure as much as we initially feared.
 </p>
 <p>
 
@@ -309,7 +309,7 @@ In the end, the photo-resistors, lasers and my beginner soldering skills didn&#3
 The end result was still impressive. We received a lot of great feedback from everyone who saw the gateway. It was rewarding to watch people&#39;s reactions as they walked through, running their fingers along the weave.
 </p>
 <p>
-My favorite thing to do was to walk through the gateway and try to touch my nose to the weave. Whenever I thought I was getting close, the threads would curve up and away from me. In hindsight, the smaller structure wasn&#39;t all bad. It made the gateway more relatable, more personal. The weave wasn&#39;t floating high above you, but was right there, in reach of your fingers. 
+My favorite thing to do was to walk through the gateway and try to touch my nose to the weave. Whenever I thought I was getting close, the threads would curve up and away from me. In hindsight, the reduced structure wasn&#39;t all bad. It made the gateway more relatable, more personal. The weave wasn&#39;t floating high above you but was right there, in reach of your fingers. 
 </p>
 <p>
 Even though the project didn&#39;t go exactly as planned, I still consider it a success. There were many unexpected hurdles we had to overcome just to erect the gateway. But the whole exercise gave me an excuse to play with new technologies and concepts, and that was a win. 
