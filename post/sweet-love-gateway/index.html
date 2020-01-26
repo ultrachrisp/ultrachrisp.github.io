@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         
         <title>Sweet Love Gateway</title>
-        <meta name="generator" content="Hugo 0.58.2" />
+        <meta name="generator" content="Hugo 0.63.1" />
         <meta name="author" content="Chris Pyke">
         <meta name="description" content="A story of the planning, prototyping, funding and construction of the &#39;Sweet Love Gateway&#39; at AfrikaBurn 2019">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,9 +136,9 @@ if (!doNotTrack) {
 Ephemeropolis was my first burn. I got involved with the AfrikaBurn website build in 2010 but I never attended. It had long been on the to-do list, so we started making plans late 2018. The core build team included <a href="https://www.facebook.com/igor.zeljko.77">Igor</a>, <a href="https://www.facebook.com/alastair.mehl">Alastair</a>, <a href="https://www.facebook.com/magoshashot">Margaret</a>, <a href="https://www.facebook.com/tiffanychi101">Tiffany</a> and myself. Supporting the team was <a href="https://www.facebook.com/CyBeRmAnZA">Bjorn</a> as well as the &#39;NoFomosapiens&#39;, who were all incredible. Oppikoppi and Meilie-pop had bigger build teams but many members couldn&#39;t attend AfrikaBurn. Contributing to AfrikaBurn seemed natural since we had built structures at festivals before.<br>
 The project took the form of a <a href="https://www.mathcurve.com/surfaces.gb/paraboloidhyperbolic/paraboloidhyperbolic.shtml">hyperbolic paraboloid</a> gateway (look at my fancy vocabulary). Igor, Alastair and Margaret had built this structure before at Oppikoppi. Based off of their insights, I thought there was room to refine &#39;how&#39; it was build. I also took on the responsibility of lighting the structure.
 </p>
-<h2 id="headline-1">
+<h3 id="headline-1">
 The Problem Statement
-</h2>
+</h3>
 <p>
 The structure itself looks simple enough. A square comprised of four square lashings at each corner. The hyperbolic paraboloid is created when you warp the 2D square into a 3D space. There is an interesting by-product of the shape: the surface or mesh bends to accommodate the frame, but the individual threads remain straight. Some of the first problems to solve were:
 </p>
@@ -163,11 +163,11 @@ Possible ways to achieve the above without over working the build team?
 The first few times the structure was built, there was a lot of spacing between the threads. Too much to catch the light. The threads where also tied to the poles individually, which made weaving labour intensive. First, each thread needed to be tied into place. When the structure was hoisted into its final position, each thread needed to be tightened. Unsurprisingly, the team agreed that there was room to improve here.
 </p>
 <p>
-My programming self needed a way to speed up the anchoring and weaving. There had to be a way to &#39;for loop&#39; / &#39;while loop&#39; / &#39;map&#39; over the threads.
+   My programming self needed a way to speed up the anchoring and weaving. There had to be a way to &#39;for loop&#39; / &#39;while loop&#39; / &#39;map&#39; over the threads.
 </p>
-<h3 id="headline-2">
+<h4 id="headline-2">
 Prototyping
-</h3>
+</h4>
 <p>
 
 
@@ -181,13 +181,13 @@ Prototyping
         src="/post/sweet-love-gateway/prototype_hu126a4afbcd8d62b9623637a7caac80e6_217618_600x0_resize_q75_box.jpg" alt="Initial prototypes of the &#39;Sweet love gateway&#39;"/>
 
 
-This is one of those skills that matures like a fine wine. When I was younger, brute force and enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of a project. Worse, avoidable mistakes were made because all stakeholders were not consulted. The process of finding and fixing issues doesn&#39;t go away, it&#39;s &#39;when&#39; you fix them that prototyping can help with.<br>
+    This is one of those skills that matures like a fine wine. When I was younger, brute force and enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of a project. Worse, avoidable mistakes were made because all stakeholders were not consulted. The process of finding and fixing issues doesn&#39;t go away, it&#39;s &#39;when&#39; you fix them that prototyping can help with.<br>
  Prototyping for pioneering projects was always a given. As a scout (aka young hot-shot who builds first and explains later, dealing with and fixing issues as they arise), prototyping was what the scout master told you to do. This resulted in a small version of the real version, which was great for photo opportunities (small version in foreground, big version in background). We did attempt to measure and prototype to scale, but the true value of prototyping was lost to us.<br>
  As I have mentioned in a <a href="https://chrispyke.com/post/almighty-prototype/">previous post</a>, prototypes are my sandbox. It&#39;s a space where I can play and make mistakes before they result in serious consequences. 
 </p>
-<h3 id="headline-3">
+<h4 id="headline-3">
 Iteration
-</h3>
+</h4>
 <p>
 We set about trying different approaches. The first prototype was concerned with the basic shape.
 </p>
@@ -207,7 +207,7 @@ Would the shape appear if we had two flat, perpendicular surfaces that weren&#39
 As much as a small scale prototype could, it confirmed the above was possible. The structure would not be as secure as if the two surfaces were woven into one another. But the time spent weaving would be reduced. It would also allow us to tighten threads without them getting caught in the weave. There were obvious problems with the first prototype, but it served its purpose and was super quick to make.
 </p>
 <p>
-The next few problems focused on threading and weaving. Prototype two and three would help solve the following:
+    The next few problems focused on threading and weaving. Prototype two and three would help solve the following:
 </p>
 <ul>
 <li>
@@ -239,26 +239,26 @@ Could we access the anchor points from the ground, once the structure was gettin
         src="/post/sweet-love-gateway/prototype_2_hu66580a55c4c522f9414dcf1e6c7ca77a_731422_600x0_resize_q75_box.jpg" alt="The third and final prototype of the &#39;Sweet love gateway&#39;"/>
 
 
-We started investigating different types of thread anchors. What was the cost of an anchor and how long would it take to secure it to a pole? <br>
+    We started investigating different types of thread anchors. What was the cost of an anchor and how long would it take to secure it to a pole? <br>
  One solution proposed by Igor or Tiffany (or both) was to use metal chains. If the chain was secured onto the pole, it provided a ton of anchor points. This was better than hooks or eye-hole bolts which needed to be secured individually. It wasn&#39;t perfect but it did provide the best &#39;number of anchor points per cost&#39; ratio.
 </p>
 <p>
-The actual method of weaving the thread through the chains was the next issue. After an afternoon of weaving, prototype two proved that simply feeding the thread through the chain was not good enough. It was impractical because of the volume of threads as well as the confusion caused by different weaving styles. Igor suggested a different approach, feeding the incoming end of the thread through a single chain link, running the thread along the chain and then feeding the out-going end through a link further along. This made tightening threads clearer as it was immediately evident which thread needed pulling vs feeding. Again, there is a programmatic term for this: clear and descriptive variable names.
+    The actual method of weaving the thread through the chains was the next issue. After an afternoon of weaving, prototype two proved that simply feeding the thread through the chain was not good enough. It was impractical because of the volume of threads as well as the confusion caused by different weaving styles. Igor suggested a different approach, feeding the incoming end of the thread through a single chain link, running the thread along the chain and then feeding the out-going end through a link further along. This made tightening threads clearer as it was immediately evident which thread needed pulling vs feeding. Again, there is a programmatic term for this: clear and descriptive variable names.
 </p>
 <p>
-With these two pivotal issues solved in theory, I focused on some of the finer construction details. The surface area of the hyperbolic paraboloid is smaller than a flat square. If we could get the starting frame closer to the final shape, we could reduce the amount of wasted thread. This meant hoisting two corners up on barrels at the very start, as well as moving in the base poles. Additionally, we didn&#39;t need access to all the anchor points while tightening the weave, only half of them. In theory, we could keep one half of the structure on the ground and hoist the other. We could do this iteratively and shouldn&#39;t need extra scaffolding to secure the structure in the air.
+    With these two pivotal issues solved in theory, I focused on some of the finer construction details. The surface area of the hyperbolic paraboloid is smaller than a flat square. If we could get the starting frame closer to the final shape, we could reduce the amount of wasted thread. This meant hoisting two corners up on barrels at the very start, as well as moving in the base poles. Additionally, we didn&#39;t need access to all the anchor points while tightening the weave, only half of them. In theory, we could keep one half of the structure on the ground and hoist the other. We could do this iteratively and shouldn&#39;t need extra scaffolding to secure the structure in the air.
 </p>
 <p>
-Armed with these insights, I felt confident that we could erect the structure on the day.
+    Armed with these insights, I felt confident that we could erect the structure on the day.
 </p>
-<h3 id="headline-4">
+<h4 id="headline-4">
 Individually Addressable Awesomeness
-</h3>
+</h4>
 <p>
 I had an idea of &#39;how&#39; I wanted to illuminate the structure, but I was exploring new ground. It culminated into my first adventure into micro-controllers. I was wholly unprepared for the end result. 
 </p>
 <p>
-
+   
 
 
 <img class="center corners"
@@ -270,16 +270,16 @@ I had an idea of &#39;how&#39; I wanted to illuminate the structure, but I was e
         src="/post/sweet-love-gateway/night_3_hu68d081edf69d56c0cd0e314ead169c89_604199_600x0_resize_q75_box.jpg" alt="A sideways photo of the &#39;Sweet love gateway&#39; at night"/>
 
 
-It started with crawling the internet, inspecting tutorials, looking at specs, looking at prices, then re-looking at specs and prices. I tried to factor redundancy into the system. Often, I would restart the process when I found more promising solutions.
+    It started with crawling the internet, inspecting tutorials, looking at specs, looking at prices, then re-looking at specs and prices. I tried to factor redundancy into the system. Often, I would restart the process when I found more promising solutions.
 </p>
 <p>
-The first problem was power. After checking availability and cost, we settled on a battery of car batteries. Bjorn was able to source the car batteries and some solar panels to charge them. At the time, we were unsure how much power the whole system would use? So Bjorn got five car batteries to be safe.
+    The first problem was power. After checking availability and cost, we settled on a battery of car batteries. Bjorn was able to source the car batteries and some solar panels to charge them. At the time, we were unsure how much power the whole system would use? So Bjorn got five car batteries to be safe.
 </p>
 <p>
-As for the LEDs, I was able to source some WS2813 strips (upgraded WS2812b). They were each 5 meters long, with 60 LEDs per meter. Each strip had 300 individually addressable LEDs. This had a potential power draw of 90W per strip (if each LED was burning white light at full brightness). The structure comprised of four 11 meter poles, so we had roughly 40 meters that we needed to cover with LEDs. That is 2400 individually addressable LEDs… I was starting to get very excited.
+    As for the LEDs, I was able to source some WS2813 strips (upgraded WS2812b). They were each 5 meters long, with 60 LEDs per meter. Each strip had 300 individually addressable LEDs. This had a potential power draw of 90W per strip (if each LED was burning white light at full brightness). The structure comprised of four 11 meter poles, so we had roughly 40 meters that we needed to cover with LEDs. That is 2400 individually addressable LEDs… I was starting to get very excited.
 </p>
 <p>
-
+    
 
 
 <img class="right corners"
@@ -291,20 +291,20 @@ As for the LEDs, I was able to source some WS2813 strips (upgraded WS2812b). The
         src="/post/sweet-love-gateway/day_1_hu5f22c848923d214059d53d07f5019fbb_1306567_600x0_resize_q75_box.jpg" alt="A day-time photo of the &#39;Sweet love gateway&#39;"/>
 
 
-The LED strips ran on 5v, which was handy. We needed step-down converters to get from 20v to 5v to run the strips and micro-controllers. I was able to get an idea of the processing power required for that number of LEDs from <a href="https://github.com/FastLED/FastLED/issues/288">this thread</a>. To ensure that I wasn&#39;t overworking the controllers, I decided to dedicate an Arduino Due to each pole.<br>
+    The LED strips ran on 5v, which was handy. We needed step-down converters to get from 20v to 5v to run the strips and micro-controllers. I was able to get an idea of the processing power required for that number of LEDs from <a href="https://github.com/FastLED/FastLED/issues/288">this thread</a>. To ensure that I wasn&#39;t overworking the controllers, I decided to dedicate an Arduino Due to each pole.<br>
  The next issue was interaction. I sourced two lasers that produced line beams and 6 photo-resistors to produce a &#39;trip wire&#39; system. I then setup a Raspberry Pi 3b to receive signals from the photo-resistors. The Rasberry Pi also co-ordinated lighting effects with the Arduinos. As I worked on the system, I realised communication could be simplified by favoring WIFI over cabling. I replaced the Arduinos with ESP32 controllers. Communication was further streamlined using the <a href="http://mqtt.org/">MQTT protocol</a>. The theory was sound and I got a working version running in my garage.
 </p>
 <p>
-Time caught up with me in the end. I did as many general tests as I could before packing up the system and preparing for the trip to Tankwa Town.
+    Time caught up with me in the end. I did as many general tests as I could before packing up the system and preparing for the trip to Tankwa Town.
 </p>
-<h3 id="headline-5">
+<h4 id="headline-5">
 Show Time
-</h3>
+</h4>
 <p>
-<em>&#34;No plan survives first contact with the enemy,&#34;</em> said <a href="https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder">Helmuth von Moltke the Elder</a>.
+    <em>&#34;No plan survives first contact with the enemy,&#34;</em> said <a href="https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder">Helmuth von Moltke the Elder</a>.
 </p>
 <p>
-
+    
 
 
 <img class="left corners"
@@ -316,21 +316,21 @@ Show Time
         src="/post/sweet-love-gateway/day_2_huc84364482bd955ce71fd4446528eaaa4_1341537_600x0_resize_q75_box.jpg" alt="Another daytime photo of the &#39;Sweet love gateway&#39;, from a side angle"/>
 
 
-The group that I was traveling with needed two full days to get from Johannesburg to Tankwa. We were venturing into the unknown (i.e. none of us had been to AfrikaBurn before), so there was a fair amount of over-preparation.<br>
+    The group that I was traveling with needed two full days to get from Johannesburg to Tankwa. We were venturing into the unknown (i.e. none of us had been to AfrikaBurn before), so there was a fair amount of over-preparation.<br>
  The first hurdle was separating the essential equipment from the &#39;nice to haves&#39;. The second was to get everyone into cars and moving. One of the cars blew a tyre on a main highway. We hadn&#39;t even started driving on the tyre-shredding gravel roads yet. We dealt with all of this in turn, trying to balance the group&#39;s feelings with the common objectives.<br>
  After we got to Tankwa town and setup our tents, we went in search of our 11 meter poles. We found them stacked by the Clan&#39;s Lamp (the core AfrikaBurn structure). The Clan helped us purchase and transported the poles to Tankwa town. This greatly simplified our lives and we were very grateful to the Clan for their support. After locating the poles, we left transporting them to the build site for the next morning.
 </p>
 <p>
-Three of the 11 meter poles were missing when we woke up. Everyone, including the organisers, were stunned. Search parties were sent out, calls were made and the whole camp started looking for the missing poles. Igor eventually spotted them at another project. We got help transporting them to our build site and then started construction.
+    Three of the 11 meter poles were missing when we woke up. Everyone, including the organisers, were stunned. Search parties were sent out, calls were made and the whole camp started looking for the missing poles. Igor eventually spotted them at another project. We got help transporting them to our build site and then started construction.
 </p>
 <p>
-When we started fastening the chains to the poles, one of the poles snapped. There were many possible reasons why the pole could have snapped (the wood was untreated by choice, the poles were left out in the desert for too long, rough treatment by the pole thieves). But none of this helped solve the problem.
+    When we started fastening the chains to the poles, one of the poles snapped. There were many possible reasons why the pole could have snapped (the wood was untreated by choice, the poles were left out in the desert for too long, rough treatment by the pole thieves). But none of this helped solve the problem.
 </p>
 <p>
-We had two options before us: try to brace the broken pole with metal (causing further delays) or literal cut our losses by shortening all the poles to match the broken one. After a tense debate, the group decided to cut the poles and carry on building. There was a small consolation that all the poles were originally 12 meters long instead of 11. This meant that we didn&#39;t reduce the size of the structure as much as we initially feared.
+    We had two options before us: try to brace the broken pole with metal (causing further delays) or literal cut our losses by shortening all the poles to match the broken one. After a tense debate, the group decided to cut the poles and carry on building. There was a small consolation that all the poles were originally 12 meters long instead of 11. This meant that we didn&#39;t reduce the size of the structure as much as we initially feared.
 </p>
 <p>
-
+    
 
 
 <img class="right corners"
@@ -342,38 +342,38 @@ We had two options before us: try to brace the broken pole with metal (causing f
         src="/post/sweet-love-gateway/night_2_hu90f59cf54177d0507d8fe5412cb28c83_949132_600x0_resize_q75_box.jpg" alt="A night time photo of the &#39;Sweet love gateway&#39;, with checkered lighting"/>
 
 
-Weaving nearly broke the team. Based on the prototypes, the team knew that weaving was the hardest part and took the most time. We had over-come more obstacles than anticipated just to get to this point. The team carried themselves well through roughly 18 hours of straight weaving. We even continued weaving through a dust storm.<br>
+    Weaving nearly broke the team. Based on the prototypes, the team knew that weaving was the hardest part and took the most time. We had over-come more obstacles than anticipated just to get to this point. The team carried themselves well through roughly 18 hours of straight weaving. We even continued weaving through a dust storm.<br>
  Hoisting the structure was the last major hurdle. We were caught off guard with the realities of AfrikaBurn. After two and a half days of construction and weaving, we needed to stop and hold the structure in a precarious position overnight. There were risks involved in pausing construction but it provided a much needed rest. 
 </p>
 <p>
-The next morning, we got some unexpected assistance from the Clan cherry picker, which sped us along. We leaned the gateway into its final position and celebrated what we had done. But even though the structure was up, I still needed to finish setting up the lights.
+    The next morning, we got some unexpected assistance from the Clan cherry picker, which sped us along. We leaned the gateway into its final position and celebrated what we had done. But even though the structure was up, I still needed to finish setting up the lights.
 </p>
 <p>
-In the end, the photo-resistors, lasers and my beginner soldering skills didn&#39;t like the dust. After a couple of hours of failed trouble-shooting, I decided to abandon the interactive element of the lighting. Plan B was to create and cycle through a couple of predefined lighting effects.
+    In the end, the photo-resistors, lasers and my beginner soldering skills didn&#39;t like the dust. After a couple of hours of failed trouble-shooting, I decided to abandon the interactive element of the lighting. Plan B was to create and cycle through a couple of predefined lighting effects.
 </p>
 <p>
-The end result was still impressive. We received a lot of great feedback from everyone who saw the gateway. It was rewarding to watch people&#39;s reactions as they walked through, running their fingers along the weave.
+    The end result was still impressive. We received a lot of great feedback from everyone who saw the gateway. It was rewarding to watch people&#39;s reactions as they walked through, running their fingers along the weave.
 </p>
 <p>
-My favorite thing to do was to walk through the gateway and try to touch my nose to the weave. Whenever I thought I was getting close, the threads would curve up and away from me. In hindsight, the reduced structure wasn&#39;t all bad. It made the gateway more relatable, more personal. The weave wasn&#39;t floating high above you but was right there, in reach of your fingers. 
+    My favorite thing to do was to walk through the gateway and try to touch my nose to the weave. Whenever I thought I was getting close, the threads would curve up and away from me. In hindsight, the reduced structure wasn&#39;t all bad. It made the gateway more relatable, more personal. The weave wasn&#39;t floating high above you but was right there, in reach of your fingers. 
 </p>
 <p>
-Even though the project didn&#39;t go exactly as planned, I still consider it a success. There were many unexpected hurdles we had to overcome just to erect the gateway. But the whole exercise gave me an excuse to play with new technologies and concepts, and that was a win. 
+    Even though the project didn&#39;t go exactly as planned, I still consider it a success. There were many unexpected hurdles we had to overcome just to erect the gateway. But the whole exercise gave me an excuse to play with new technologies and concepts, and that was a win. 
 </p>
-<h3 id="headline-6">
+<h4 id="headline-6">
 Afrikaburn 2019: Ephemeropolis
-</h3>
+</h4>
 <p>
 It is very hard to sum up my experiences and impressions. This post has focused on the Sweet Love Gateway but there was so… so very much more. I was invited to present &amp; share my journey, so I created this <a href="https://slides.com/ultrachrisp/deck">slide deck</a>. These slides only offer a taste of what was there.
 </p>
 <p>
-AfrikaBurn changed me for the better. It left me awed and humbled. The people, the projects, the setting… I still struggle to find words to adequately describe it.
+    AfrikaBurn changed me for the better. It left me awed and humbled. The people, the projects, the setting… I still struggle to find words to adequately describe it.
 </p>
 <p>
-<em>Thank you AfrikaBurn, for everything you are!</em>
+    <em>Thank you AfrikaBurn, for everything you are!</em>
 </p>
 <p>
-
+    
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/L8V3rp6gvO8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
