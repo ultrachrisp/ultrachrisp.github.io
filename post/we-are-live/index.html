@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         
         <title>We&#39;re Live!</title>
-        <meta name="generator" content="Hugo 0.58.1" />
+        <meta name="generator" content="Hugo 0.74.3" />
         <meta name="author" content="Chris Pyke">
         <meta name="description" content="First post, and a break down of the tools used to construct the site">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,14 +103,6 @@ if (!doNotTrack) {
     <a href="https://chrispyke.com/post">
         <span class="icon-quill"></span>
     </a>
-    <span class="line">
-    <span class="subLine1"></span>
-    <span class="subLine2"></span>
-</span>
-
-    <a href="https://chrispyke.com/cv">
-        <span class="icon-profile"></span>
-    </a>
 </nav>
 
 
@@ -123,72 +115,88 @@ if (!doNotTrack) {
     
     
 <p>
-This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.
-</p>
-<h2 id="headline-1">
+This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.</p>
+<div id="outline-container-headline-1" class="outline-3">
+<h3 id="headline-1">
 Hugo
-</h2>
+</h3>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>The more I use <a href="https://gohugo.io/">Hugo</a>, the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time. Database driven CMS&#39;s are still relevant for large, distributed teams that need a central point to manage their content. The rise of <a href="https://www.staticgen.com/">static site generators</a> allows us to sidestep the reliance on a back-end for simple sites. There is a static site generator suited for everyone but when Hugo started supporting <a href="http://orgmode.org/">org-mode</a> for content was when I became hooked.</p>
 <p>
-The more I use <a href="https://gohugo.io/">Hugo</a>, the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time. Database driven CMS&#39;s are still relevant for large, distributed teams that need a central point to manage their content. The rise of <a href="https://www.staticgen.com/">static site generators</a> allows us to sidestep the reliance on a back-end for simple sites. There is a static site generator suited for everyone but when Hugo started supporting <a href="http://orgmode.org/">org-mode</a> for content was when I became hooked.
-</p>
-<p>
-The ability to customise Hugo to your tastes is a big plus. It handles the content and then quickly gets out of the way. It is fast, stable and provides all the functionality I need. I only have praise for the team, Hugo is a joy to work with.
-</p>
-<h3 id="headline-2">
+   The ability to customise Hugo to your tastes is a big plus. It handles the content and then quickly gets out of the way. It is fast, stable and provides all the functionality I need. I only have praise for the team, Hugo is a joy to work with.</p>
+<div id="outline-container-headline-2" class="outline-4">
+<h4 id="headline-2">
 GitHub &amp; GitHub Pages
-</h3>
-<p>
-I rely heavily on version control. Most of my work goes into private repositories which left my <a href="https://github.com/">GitHub</a> account neglected. I use <a href="https://pages.github.com/">GitHub Pages</a> for this blog. If there is no major reliance on a back-end, you can have your repositories &amp; blog in the same place. Yay Git!
-</p>
-<h3 id="headline-3">
+</h4>
+<div id="outline-text-headline-2" class="outline-text-4">
+<p>I rely heavily on version control. Most of my work goes into private repositories which left my <a href="https://github.com/">GitHub</a> account neglected. I use <a href="https://pages.github.com/">GitHub Pages</a> for this blog. If there is no major reliance on a back-end, you can have your repositories &amp; blog in the same place. Yay Git!</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
 Cloudflare
-</h3>
-<p>
-You have a static website but you now need SSL or some simple server functionality? Enter <a href="https://www.cloudflare.com/">Cloudflare</a>, helping secure your website as well as other benefits. It solved the issues I had, and it solved it for free.
-</p>
-<h3 id="headline-4">
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p>You have a static website but you now need SSL or some simple server functionality? Enter <a href="https://www.cloudflare.com/">Cloudflare</a>, helping secure your website as well as other benefits. It solved the issues I had, and it solved it for free.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
+<h4 id="headline-4">
 <del>Gulp</del> NPM
-</h3>
+</h4>
+<div id="outline-text-headline-4" class="outline-text-4">
+<p><del>There are options with Task Runners too but I have grown very found of <a href="http://gulpjs.com/">Gulp</a>. In time, I may simplify my builds using more generic tools (i.e. <a href="https://www.npmjs.com/">npm</a> natively or bash scripts) but Gulp does what I need it too and it does it well.</del></p>
 <p>
-<del>There are options with Task Runners too but I have grown very found of <a href="http://gulpjs.com/">Gulp</a>. In time, I may simplify my builds using more generic tools (i.e. <a href="https://www.npmjs.com/">npm</a> natively or bash scripts) but Gulp does what I need it too and it does it well.</del>
-</p>
-<p>
-Gulp certainly still has its place but after working with <a href="https://webpack.js.org/">Webpack</a>, I have grown more accustomed to <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a>. Moving from Gulp to NPM scripts allowed me to remove a &#39;minor&#39; dependency &amp; streamline my build process.
-</p>
-<h3 id="headline-5">
+    Gulp certainly still has its place but after working with <a href="https://webpack.js.org/">Webpack</a>, I have grown more accustomed to <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a>. Moving from Gulp to NPM scripts allowed me to remove a &#39;minor&#39; dependency &amp; streamline my build process.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
 <del>Susy</del> CSS Grid &amp; Flexbox
-</h3>
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<p><del>For the life of me, I cannot understand why <a href="http://susy.oddbird.net/">Susy</a> has not been more widely adopted. I have been using Susy as a <a href="http://sass-lang.com/">Sass</a> grid system for a few years and the flexibility it gives is unmatched. The rise of flex-box and CSS-grid will eventually replace Susy. Until then, it allows greater  freedom in positioning &amp; layout without the expense of my sanity or weekends.</del></p>
 <p>
-<del>For the life of me, I cannot understand why <a href="http://susy.oddbird.net/">Susy</a> has not been more widely adopted. I have been using Susy as a <a href="http://sass-lang.com/">Sass</a> grid system for a few years and the flexibility it gives is unmatched. The rise of flex-box and CSS-grid will eventually replace Susy. Until then, it allows greater  freedom in positioning &amp; layout without the expense of my sanity or weekends.</del>
-</p>
-<p>
-For its time, Susy was amazing! It added so many options that were either not available or took too long to develop &amp; maintain. But after CSS grid &amp; flexbox arrived (and Susy started to <a href="https://twitter.com/SassSusy/status/954423375127957504">shut down</a>), there really was no excuse to hold onto the past. A combination of CSS grid &amp; flexbox can allow for almost limitless responsive layout options. I decided to try it out and recreate the existing Susy layout using CSS grid &amp; flexbox. And where better than here!
-</p>
-<h3 id="headline-6">
+    For its time, Susy was amazing! It added so many options that were either not available or took too long to develop &amp; maintain. But after CSS grid &amp; flexbox arrived (and Susy started to <a href="https://twitter.com/SassSusy/status/954423375127957504">shut down</a>), there really was no excuse to hold onto the past. A combination of CSS grid &amp; flexbox can allow for almost limitless responsive layout options. I decided to try it out and recreate the existing Susy layout using CSS grid &amp; flexbox. And where better than here!</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
+<h4 id="headline-6">
 JavaScript
-</h3>
+</h4>
+<div id="outline-text-headline-6" class="outline-text-4">
+<p>Or lack thereof. One of the goals for the blog was to see if I could solve most problems without having to use JavaScript (JS). <a href="https://stallman.org/">Richard Stallman</a> and his approaches to software development have impacted my views. Completely &#39;free&#39; software is a worthwhile ideal if somewhat inconvenient. </p>
 <p>
-Or lack thereof. One of the goals for the blog was to see if I could solve most problems without having to use JavaScript (JS). <a href="https://stallman.org/">Richard Stallman</a> and his approaches to software development have impacted my views. Completely &#39;free&#39; software is a worthwhile ideal if somewhat inconvenient. 
-</p>
-<p>
-The blog runs Analytics but should still function with JS disabled. Not a day goes by when I do not write some JS, but this blog is as much about experimenting &amp; prototyping as it is about blogging. I&#39;ll save JS for the good stuff.
-</p>
-<h3 id="headline-7">
+    The blog runs Analytics but should still function with JS disabled. Not a day goes by when I do not write some JS, but this blog is as much about experimenting &amp; prototyping as it is about blogging. I&#39;ll save JS for the good stuff.</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-4">
+<h4 id="headline-7">
 Emacs
-</h3>
+</h4>
+<div id="outline-text-headline-7" class="outline-text-4">
+<p>My love of <a href="https://www.gnu.org/software/emacs/">Emacs</a> grows. After a number of years using it as a time-tracking &amp; scoping tool, I recently took the plunge and started developing in it. My quality of life has increased significantly.</p>
 <p>
-My love of <a href="https://www.gnu.org/software/emacs/">Emacs</a> grows. After a number of years using it as a time-tracking &amp; scoping tool, I recently took the plunge and started developing in it. My quality of life has increased significantly.
-</p>
+ <strong>Question:</strong> Is it the only IDE solution &amp; does it do everything better than all the others?</p>
 <p>
-<strong>Question:</strong> Is it the only IDE solution &amp; does it do everything better than all the others?
-</p>
+ <strong>Answer:</strong> No, but it can do so much once you get over the learning curve &amp; play to its strengths.</p>
 <p>
-<strong>Answer:</strong> No, but it can do so much once you get over the learning curve &amp; play to its strengths.
-</p>
-<p>
-Tip 22 from the <a href="https://pragprog.com/book/tpp/the-pragmatic-programmer">Pragmatic Programmer</a> was &#34;Use a single editor well&#34;. This struck me as odd because I was using a number of IDE&#39;s simultaneously. Each one had its specific niche but fell short in other respects. I now see the advantage of consolidating my life in a single editor. I use other IDE&#39;s when needed (<a href="https://www.visualstudio.com/">Visual Studio</a>, <a href="https://developer.apple.com/xcode/">Xcode</a>, <a href="https://madewith.unity.com/">Unity</a> &amp; <a href="https://www.unrealengine.com/">Unreal</a>) but Emacs feels like home every time I fire it up.
-</p>
+ Tip 22 from the <a href="https://pragprog.com/book/tpp/the-pragmatic-programmer">Pragmatic Programmer</a> was &#34;Use a single editor well&#34;. This struck me as odd because I was using a number of IDE&#39;s simultaneously. Each one had its specific niche but fell short in other respects. I now see the advantage of consolidating my life in a single editor. I use other IDE&#39;s when needed (<a href="https://www.visualstudio.com/">Visual Studio</a>, <a href="https://developer.apple.com/xcode/">Xcode</a>, <a href="https://madewith.unity.com/">Unity</a> &amp; <a href="https://www.unrealengine.com/">Unreal</a>) but Emacs feels like home every time I fire it up.</p>
+</div>
+</div>
+</div>
+</div>
 
+
+    <script src="https://utteranc.es/client.js"
+        repo="ultrachrisp/ultrachrisp.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
 </section>
 
 <aside class="pagination">

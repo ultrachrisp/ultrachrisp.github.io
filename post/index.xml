@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Space Cowboy Coding</title>
@@ -26,7 +26,8 @@
       <pubDate>Thu, 27 Dec 2018 16:42:43 +0200</pubDate>
       
       <guid>https://chrispyke.com/post/almighty-prototype/</guid>
-      <description>Hindsight is completely unforgiving. Looking back &amp;amp; observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail &amp;amp; learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs. But I know what the user wants   Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the beginning of the project?</description>
+      <description>Hindsight is completely unforgiving. Looking back &amp;amp; observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail &amp;amp; learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.
+But I know what the user wants  Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the beginning of the project?</description>
     </item>
     
     <item>
@@ -35,7 +36,8 @@
       <pubDate>Sat, 10 Feb 2018 16:42:43 +0200</pubDate>
       
       <guid>https://chrispyke.com/post/ready-set-react/</guid>
-      <description>I am surprised how quickly I took to React. I had completed Functional Programming in Scala and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application. So it began   After doing some initial reading on Angular and Vue, I settled on React as it aligned closest to what I was trying to do.</description>
+      <description>I am surprised how quickly I took to React. I had completed Functional Programming in Scala and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
+So it began  After doing some initial reading on Angular and Vue, I settled on React as it aligned closest to what I was trying to do.</description>
     </item>
     
     <item>
@@ -63,7 +65,8 @@ I have completed Functional Programming in Scala. I was not fully prepared for t
       <pubDate>Sun, 18 Jun 2017 13:49:02 +0200</pubDate>
       
       <guid>https://chrispyke.com/post/we-are-live/</guid>
-      <description>This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog. Hugo   The more I use Hugo, the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time.</description>
+      <description>This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.
+Hugo  The more I use Hugo, the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time.</description>
     </item>
     
   </channel>

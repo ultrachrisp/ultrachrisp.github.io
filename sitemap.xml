@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -15,11 +15,6 @@
   <url>
     <loc>https://chrispyke.com/post/sweet-love-gateway/</loc>
     <lastmod>2019-07-30T02:22:22+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrispyke.com/cv/</loc>
-    <lastmod>2019-06-05T10:09:06+02:00</lastmod>
   </url>
   
   <url>
