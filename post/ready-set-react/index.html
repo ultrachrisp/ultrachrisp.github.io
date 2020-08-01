@@ -24,7 +24,7 @@
         <link href="https://chrispyke.com/fonts/icomoon.woff?6w01iz" rel="preload" as="font" type="font/woff" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:300,600" rel="stylesheet">
         
-        <link href="https://chrispyke.com/scss/main.36cc64e68d0467a582d57f865dcc17325254b9d76004e5821c1791496de46a51.css" integrity="sha256-Nsxk5o0EZ6WC1X&#43;GXcwXMlJUuddgBOWCHBeRSW3kalE=" rel="stylesheet">
+        <link href="https://chrispyke.com/scss/main.9c730ff4b72a0964de6816760415b9ede4bf89ac77bd148bfcc155927f7d7171.css" integrity="sha256-nHMP9LcqCWTeaBZ2BBW57eS/iax3vRSL/MFVkn99cXE=" rel="stylesheet">
         
         
         
@@ -121,6 +121,7 @@ if (!doNotTrack) {
 <img class="right" style="width:180px;" src="/post/ready-set-react/react.svg" alt="React logo"/>
 
 
+<<<<<<< HEAD
 I am surprised how quickly I took to <a href="https://reactjs.org/">React</a>. I had completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS">Functional Programming in Scala</a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.</p>
 <div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
@@ -128,6 +129,22 @@ So it began
 </h3>
 <div id="outline-text-headline-1" class="outline-text-3">
 <p>After doing some initial reading on <a href="https://angularjs.org/">Angular</a> and <a href="https://vuejs.org/">Vue</a>, I settled on React as it aligned closest to what I was trying to do. <a href="https://www.udemy.com/react-redux/">Modern React with Redux</a> &amp; <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/">Webpack 2: The Complete Developer&#39;s Guide</a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.</p>
+=======
+I am surprised how quickly I took to <a href="https://reactjs.org/">React</a>. I had completed <a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS">Functional Programming in Scala</a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
+</p>
+<h3 id="headline-1">
+So it began
+</h3>
+<p>
+After doing some initial reading on <a href="https://angularjs.org/">Angular</a> and <a href="https://vuejs.org/">Vue</a>, I settled on React as it aligned closest to what I was trying to do. <a href="https://www.udemy.com/react-redux/">Modern React with Redux</a> &amp; <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/">Webpack 2: The Complete Developer&#39;s Guide</a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.
+</p>
+<p>
+   With that in mind &amp; a clear idea of what I didn&#39;t want, I started.
+</p>
+<h4 id="headline-2">
+Json driven
+</h4>
+>>>>>>> 02aafa7bf7bebfc24114a37ff30c5eec22133477
 <p>
    With that in mind &amp; a clear idea of what I didn&#39;t want, I started.</p>
 <div id="outline-container-headline-2" class="outline-4">
@@ -137,6 +154,7 @@ Json driven
 <div id="outline-text-headline-2" class="outline-text-4">
 <p>When your application is driven by Json, it can reinforce the separation between presentation &amp; logic. Structuring your content &amp; application logic into Json pays off when you can add &amp; remove components through edits to the Json. Content updates then become much easier.</p>
 <p>
+<<<<<<< HEAD
     The Json then becomes the composite model of your application.</p>
 </div>
 </div>
@@ -168,9 +186,38 @@ Brand new second hand
 </h4>
 <div id="outline-text-headline-5" class="outline-text-4">
 <p>Modular components allow for component libraries that span multiple applications. There are many advantages: consistency across applications; more maintainable components; faster updates across applications.</p>
+=======
+    The Json then becomes the composite model of your application.
+</p>
+<h4 id="headline-3">
+Application vs component state
+</h4>
+<p>
+Or phrased better, &#39;why not both?&#39;
+</p>
+<p>
+    The temptation of putting all application state in Redux is appealing but impractical. Reducing your logic into sections that fit into reducers helps to add focus to core changes. The logic left over gets implemented as component state &amp; logic. 
+</p>
+<p>
+    But I was unprepared for the joy I felt when there was a clear separation of application vs local state. It was incredibly satisfying watching the application refresh relevant components on critical changes, as well as watching interactions between components that did not affect the application state.
+</p>
+<h4 id="headline-4">
+Components everywhere
+</h4>
+<p>
+This has been a secondary objective in so many of my projects that I had almost given up hope of getting it right. This is not to say that it is not possible in other frameworks, or that other frameworks have not attempted the same thing. But when the timelines are tight or more members are added to the team, the current pressures usually override all future payoffs.
+</p>
+<p>
+    React (I am going to abuse another well known phrase) treats components as &#39;first class citizens&#39;. React focuses your development around building smaller, more reusable, more interchangeable components. The application arises from the interactions of these components. The whole process feels very natural.
+</p>
+<h4 id="headline-5">
+Brand new second hand
+</h4>
+>>>>>>> 02aafa7bf7bebfc24114a37ff30c5eec22133477
 <p>
     In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library… I am trying hard to think of down-sides.</p>
 <p>
+<<<<<<< HEAD
     This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look &amp; refine your existing components to accommodate new features &amp; functionality without sacrificing its modularity.</p>
 </div>
 </div>
@@ -196,6 +243,32 @@ Debugging
         async>
 </script>
 
+=======
+    In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library… I am trying hard to think of down-sides.
+</p>
+<p>
+    This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look &amp; refine your existing components to accommodate new features &amp; functionality without sacrificing its modularity.
+</p>
+<h4 id="headline-6">
+Debugging
+</h4>
+<p>
+I was surprised when the production version of the application threw a run-time error that was not present during development. My initial disappointment did not last long once I dived in and started debugging. I was able to isolate the troubled component quickly by removing components via the Json. And since I was looking at a single, modular component, finding and fixing the problem was trivial.
+</p>
+<p>
+    <a href="https://github.com/gaearon/redux-devtools">Redux Devtools</a> is also an excellent browser extension &amp; an invaluable development tool. It surfaces the application state, tracks specific state changes and even allows you to go back to previous versions of the state. It does not surface component state which can be confusing.
+</p>
+
+
+    <script src="https://utteranc.es/client.js"
+        repo="ultrachrisp/ultrachrisp.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+>>>>>>> 02aafa7bf7bebfc24114a37ff30c5eec22133477
     
 </section>
 
