@@ -544,13 +544,7 @@ Major in Multimedia&lt;/p></description></item><item><title>The Almighty Prototy
 &lt;img class="right" style="width:130px;" src="https://chrispyke.com/post/almighty-prototype/prototype.svg" alt="Prototype graphic"/>
 
 
-Hindsight is completely unforgiving. Looking back &amp;amp; observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail &amp;amp; learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.&lt;/p>
-&lt;div id="outline-container-headline-1" class="outline-3">
-&lt;h3 id="headline-1">
-But I know what the user wants
-&lt;/h3>
-&lt;div id="outline-text-headline-1" class="outline-text-3">
-&lt;p>Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the beginning of the project? But prototyping is not refining but rather narrowing the focus. The &amp;#39;agile approach&amp;#39; expects us to deploy a &amp;#39;minimum viable product&amp;#39; (MVP) as soon as possible &amp;amp; iterate on it. In the panic to get to market, it is easy to overlook the word &amp;#39;viable&amp;#39; in MVP.&lt;/p></description></item><item><title>Ready, Set, React.</title><link>https://chrispyke.com/post/ready-set-react/</link><pubDate>Sat, 10 Feb 2018 16:42:43 +0200</pubDate><guid>https://chrispyke.com/post/ready-set-react/</guid><description>&lt;p>
+Hindsight is completely unforgiving. Looking back &amp;amp; observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail &amp;amp; learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.&lt;/p></description></item><item><title>Ready, Set, React.</title><link>https://chrispyke.com/post/ready-set-react/</link><pubDate>Sat, 10 Feb 2018 16:42:43 +0200</pubDate><guid>https://chrispyke.com/post/ready-set-react/</guid><description>&lt;p>
 
 
 
@@ -559,13 +553,7 @@ But I know what the user wants
 &lt;img class="right" style="width:180px;" src="https://chrispyke.com/post/ready-set-react/react.svg" alt="React logo"/>
 
 
-I am surprised how quickly I took to &lt;a href="https://reactjs.org/">React&lt;/a>. I had completed &lt;a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS">Functional Programming in Scala&lt;/a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.&lt;/p>
-&lt;div id="outline-container-headline-1" class="outline-3">
-&lt;h3 id="headline-1">
-So it began
-&lt;/h3>
-&lt;div id="outline-text-headline-1" class="outline-text-3">
-&lt;p>After doing some initial reading on &lt;a href="https://angularjs.org/">Angular&lt;/a> and &lt;a href="https://vuejs.org/">Vue&lt;/a>, I settled on React as it aligned closest to what I was trying to do. &lt;a href="https://www.udemy.com/react-redux/">Modern React with Redux&lt;/a> &amp;amp; &lt;a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/">Webpack 2: The Complete Developer&amp;#39;s Guide&lt;/a> provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.&lt;/p></description></item><item><title>Do you even functional bro?</title><link>https://chrispyke.com/post/do-you-even-functional-bro/</link><pubDate>Sat, 09 Sep 2017 15:45:43 +0200</pubDate><guid>https://chrispyke.com/post/do-you-even-functional-bro/</guid><description>&lt;p>
+I am surprised how quickly I took to &lt;a href="https://reactjs.org/">React&lt;/a>. I had completed &lt;a href="https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS">Functional Programming in Scala&lt;/a> and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.&lt;/p></description></item><item><title>Do you even functional bro?</title><link>https://chrispyke.com/post/do-you-even-functional-bro/</link><pubDate>Sat, 09 Sep 2017 15:45:43 +0200</pubDate><guid>https://chrispyke.com/post/do-you-even-functional-bro/</guid><description>&lt;p>
 
 
 
@@ -579,10 +567,4 @@ I have completed &lt;a href="https://www.coursera.org/account/accomplishments/sp
 I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. &lt;/p>
 &lt;p>
 On any given day, I work on a number of tech stacks that get the job done but leave me thinking, &amp;#34;If I could have built this from scratch?&amp;#34; Most projects suffer from budget &amp;amp; time constraints and end up being good enough. But when you do have enough time, when you are able to pick your tools and set them up just right and you watch them work together… then the endorphin&amp;#39;s flow. &lt;/p></description></item><item><title>We're Live!</title><link>https://chrispyke.com/post/we-are-live/</link><pubDate>Sun, 18 Jun 2017 13:49:02 +0200</pubDate><guid>https://chrispyke.com/post/we-are-live/</guid><description>&lt;p>
-This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.&lt;/p>
-&lt;div id="outline-container-headline-1" class="outline-3">
-&lt;h3 id="headline-1">
-Hugo
-&lt;/h3>
-&lt;div id="outline-text-headline-1" class="outline-text-3">
-&lt;p>The more I use &lt;a href="https://gohugo.io/">Hugo&lt;/a>, the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time. Database driven CMS&amp;#39;s are still relevant for large, distributed teams that need a central point to manage their content. The rise of &lt;a href="https://www.staticgen.com/">static site generators&lt;/a> allows us to sidestep the reliance on a back-end for simple sites. There is a static site generator suited for everyone but when Hugo started supporting &lt;a href="http://orgmode.org/">org-mode&lt;/a> for content was when I became hooked.&lt;/p></description></item></channel></rss>
+This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.&lt;/p></description></item></channel></rss>
